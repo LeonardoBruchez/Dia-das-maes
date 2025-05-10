@@ -40,6 +40,8 @@ function createHeart() {
 
   let cartinhaAberta = false;
 
+
+  
 function abrirEnvelope() {
   const envelope = document.querySelector('.envelope');
   const mensagem = document.getElementById('mensagemCartinha');
@@ -52,5 +54,16 @@ function abrirEnvelope() {
     cartinhaAberta = true;
   }
 }
+function criarCoracao() {
+    const coracao = document.createElement("div");
+    coracao.classList.add("coracao");
+    coracao.innerText = "❤️";
+    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.fontSize = Math.random() * 20 + 10 + "px";
+    document.querySelector(".coraçoes-container").appendChild(coracao);
+    setTimeout(() => coracao.remove(), 4000);
+  }
+  setInterval(criarCoracao, 800);
+  
 
   
