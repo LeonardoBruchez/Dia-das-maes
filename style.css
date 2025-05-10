@@ -56,6 +56,95 @@
     to { opacity: 1; transform: translateY(0); }
   }
   
+  .navegar-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ec407a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+    z-index: 10; /* Garante que o botão ficará sobre as imagens */
+}
+
+/* Media queries para telas menores (celulares) */
+@media (max-width: 768px) {
+    .navegar-btn {
+        font-size: 1.5em;
+        padding: 12px 16px;
+    }
+}
+
+/* Media queries para telas ainda menores (dispositivos muito pequenos) */
+@media (max-width: 480px) {
+    .navegar-btn {
+        font-size: 1.2em;
+        padding: 10px 14px;
+    }
+}
+
+/* Hover efeito na imagem */
+.gallery img:hover {
+    transform: scale(1.05);
+    z-index: -1; /* Garante que a imagem ficará atrás do botão */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, z-index 0s;
+    object-fit: cover;
+}
+
+/* Hover efeito para o botão */
+.navegar-btn:hover {
+    background-color: #c2185b;
+    transform: scale(1.1);
+}
+
+.navegar-btn i {
+    font-size: 1.5em;
+    animation: bounce 1s infinite;
+}
+
+/* Animação de pulsação do botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animação de movimento para a seta */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+  
   .heart {
     position: fixed;
     width: 20px;

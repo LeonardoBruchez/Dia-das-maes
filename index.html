@@ -4,12 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Feliz Dia das Mães</title>
+  <!-- Carregar a biblioteca FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <h1>Feliz Dia das Mães 💐</h1>
   <p>Mãe, você é meu maior presente. Te amo infinitamente! ❤️</p>
+
+  <!-- Botão fixo com ícone de seta animada -->
+<a href="#mensagens" class="navegar-btn">
+    <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
+  </a>
+  
+  
+  
 
   <div class="gallery">
     <img src="fotos mae/1746917816883.jpg" alt="Mamãe 1">
@@ -44,7 +55,7 @@
   
   <div class="coraçoes-container"></div>
 
-  <section class="mensagens">
+  <section class="mensagens" id="mensagens">
     <h2>Escolha uma mensagem para você ❤️</h2>
     <div class="botoes">
       <button onclick="mostrarMensagem('feliz')">😊 Estou feliz</button>
@@ -55,14 +66,12 @@
     <div class="mensagem-exibida" id="mensagem"></div>
   </section>
   
-  
-  <div class="envelope" onclick="abrirEnvelope()">
+  <div class="envelope" id="cartinha" onclick="abrirEnvelope()">
     <div class="tampa"></div>
     <div class="corpo">
       <p id="mensagemCartinha">💌 Toque para abrir uma mensagem especial</p>
     </div>
   </div>
-  
   
   <footer>
     Feito com amor 💖 para você!
