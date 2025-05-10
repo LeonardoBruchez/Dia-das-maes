@@ -35,12 +35,15 @@
   }
   
   .gallery img {
-    width: 250px;
+    width: 220px; /* ou 100% para mobile-friendly */
+    max-width: 100%; /* garante responsividade */
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transition: transform 0.3s;
+    object-fit: cover;
   }
+  
   
   .gallery img:hover {
     transform: scale(1.05);
