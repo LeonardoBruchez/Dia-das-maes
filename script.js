@@ -37,4 +37,20 @@ function createHeart() {
   
     mensagem.textContent = texto;
   }
+
+  let cartinhaAberta = false;
+
+function abrirEnvelope() {
+  const envelope = document.querySelector('.envelope');
+  const mensagem = document.getElementById('mensagemCartinha');
+
+  if (!cartinhaAberta) {
+    envelope.classList.add('aberto');
+    setTimeout(() => {
+      mensagem.innerHTML = "Mamãe querida, você é o meu amor eterno. 💖<br>Obrigado por tudo que já fez e faz por mim. <br>Essa mensagem é só um pedacinho do que sinto por você!";
+    }, 600);
+    cartinhaAberta = true;
+  }
+}
+
   
