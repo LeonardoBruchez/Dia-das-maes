@@ -58,6 +58,8 @@ function mostrarTexto() {
     }
 }
 
+
+
 let cartinhaAberta = false;
 
 function abrirEnvelope() {
