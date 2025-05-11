@@ -14,10 +14,23 @@
   <h1>Feliz Dia das Mães 💐</h1>
   <p>Mãe, você é meu maior presente. Te amo infinitamente! ❤️</p>
 
-  <!-- Botão fixo com ícone de seta animada -->
-  <a href="#mensagens" class="navegar-btn">
-    <i class="fas fa-chevron-down"></i> <!-- Ícone de seta para baixo -->
-  </a>
+  
+  <!-- Botão fixo que muda ao chegar no fim da página -->
+<button id="scrollBtn" onclick="scrollPagina()">
+  <i class="fas fa-chevron-down"></i>
+</button>
+
+
+  <section class="mensagens" id="mensagens">
+      <h2>Escolha uma mensagem para você ❤️</h2>
+      <div class="botoes">
+        <button onclick="mostrarMensagem('feliz')">😊 Estou feliz</button>
+        <button onclick="mostrarMensagem('triste')">😢 Estou triste</button>
+        <button onclick="mostrarMensagem('carinho')">🥰 Quero carinho</button>
+        <button onclick="mostrarMensagem('forca')">💪 Preciso de força</button>
+      </div>
+      <div class="mensagem-exibida" id="mensagem"></div>
+    </section>
 
   <div class="gallery">
   <div class="image-item">
@@ -140,16 +153,7 @@
   
   <div class="coraçoes-container"></div>
 
-  <section class="mensagens" id="mensagens">
-    <h2>Escolha uma mensagem para você ❤️</h2>
-    <div class="botoes">
-      <button onclick="mostrarMensagem('feliz')">😊 Estou feliz</button>
-      <button onclick="mostrarMensagem('triste')">😢 Estou triste</button>
-      <button onclick="mostrarMensagem('carinho')">🥰 Quero carinho</button>
-      <button onclick="mostrarMensagem('forca')">💪 Preciso de força</button>
-    </div>
-    <div class="mensagem-exibida" id="mensagem"></div>
-  </section>
+  
   
   <div class="envelope" id="cartinha" onclick="abrirEnvelope()">
     <div class="tampa"></div>
