@@ -26,13 +26,14 @@ p {
     animation: fadeInUp 2s ease;
 }
   
+/* Layout padrão (desktop) - usando grid */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Disposição flexível de colunas */
     gap: 20px;
     padding: 20px;
 }
-  
+
 .gallery img {
     width: 100%;
     height: auto;
@@ -41,23 +42,48 @@ p {
     transition: transform 0.3s, z-index 0s;
     object-fit: cover;
 }
-  
+
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05);  /* Efeito de zoom */
     z-index: -1;
 }
-  
+
+/* Layout para a galeria de imagens - para telas menores que 768px */
+@media (max-width: 768px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espaço entre as imagens */
+    }
+
+    .gallery img {
+        width: 48%; /* 48% para garantir duas imagens por linha */
+        margin-bottom: 20px; /* Espaço entre as imagens na linha */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição no hover */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05); /* Efeito de zoom no hover */
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
+        z-index: 1; /* Garantir que a imagem sobreposta seja exibida corretamente */
+    }
+}
+
+
+/* Animações de fade */
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-50px); }
     to { opacity: 1; transform: translateY(0); }
 }
-  
+
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+
 /* NOVO BOTÃO SCROLL COM ID */
+/* Ajustar a posição do botão para garantir que ele fique fixo */
 #scrollBtn {
     position: fixed;
     bottom: 20px;
@@ -71,11 +97,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: pulse 1.5s infinite;
     z-index: 10;
+    box-shadow: none; /* Remover sombra */
+    border: none; /* Remover borda */
+    margin: 0; /* Garantir que não haja margens extras */
 }
+
 
 #scrollBtn:hover {
     background-color: #c2185b;
