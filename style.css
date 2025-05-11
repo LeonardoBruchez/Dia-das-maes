@@ -296,31 +296,7 @@
     100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
   }
   
-  .video-gallery {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
-  }
-  
-  .video-gallery h2 {
-    font-size: 2em;
-    color: #c2185b;
-    margin-bottom: 20px;
-  }
-  
-  .videos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  video {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+ 
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
