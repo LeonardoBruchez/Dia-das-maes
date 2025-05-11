@@ -14,154 +14,168 @@
   <h1>Feliz Dia das Mães 💐</h1>
   <p>Mãe, você é meu maior presente. Te amo infinitamente! ❤️</p>
 
-  
   <!-- Botão fixo que muda ao chegar no fim da página -->
-<button id="scrollBtn" onclick="scrollPagina()">
-  <i class="fas fa-chevron-down"></i>
-</button>
-
+  <button id="scrollBtn" onclick="scrollPagina()">
+    <i class="fas fa-chevron-down"></i>
+  </button>
 
   <section class="mensagens" id="mensagens">
-      <h2>Escolha uma mensagem para você ❤️</h2>
-      <div class="botoes">
-        <button onclick="mostrarMensagem('feliz')">😊 Estou feliz</button>
-        <button onclick="mostrarMensagem('triste')">😢 Estou triste</button>
-        <button onclick="mostrarMensagem('carinho')">🥰 Quero carinho</button>
-        <button onclick="mostrarMensagem('forca')">💪 Preciso de força</button>
+    <h2>Escolha uma mensagem para você ❤️</h2>
+    <div class="botoes">
+      <button onclick="mostrarMensagem('feliz')">😊 Estou feliz</button>
+      <button onclick="mostrarMensagem('triste')">😢 Estou triste</button>
+      <button onclick="mostrarMensagem('carinho')">🥰 Quero carinho</button>
+      <button onclick="mostrarMensagem('forca')">💪 Preciso de força</button>
+    </div>
+    <div class="mensagem-exibida" id="mensagem"></div>
+  </section>
+  
+
+  <section class="exibir-texto">
+    <h2>Carta aberta,feita por mim 💖</h2>
+    <p>assinado. Leonardo Cassiano.</p>
+
+    <div class="message-box">
+      <p>Não tenho como descrever a gratidão por ter uma mãe como você,que sempre nos ajuda,sempre se preocupa com nós. </p>
+      <p>Independente de tudo,vou sempre te amar,e sempre te agradecer por tudo que você faz por nós,não há dinheiro que compre a gratidão e o amor que eu sinto por você,mãe.</p>
+
+      <div id="textoCompleto" style="display: none;">
+        <p>Independentemente das discussões que temos em família,você sempre faz tudo pensando na gente,e sempre se preocupando,nunca com nada além de amor e preocupação,por mais que as vezes achemos que você está se preocupando demais,etc,sabemos que é o seu jeito,de mãe,de se preocupar sempre,Independente se nós tivermos 40 anos e morando longe,sempre terá preocupação,e é isto que te torna uma mãe que nós sempre amaremos,uma mãe batalhadora,trabalhadora,esforçada,cuidadosa,dedicada,amorosa,irritada as vezes também kkkkk,e muito além do que eu possa falar ou expressar,eu e a Lara sempre iremos te amar,Independente do que acontecer,a gratidão que temos por tudo,pelo que você nos ensina (que a gente te ensina também no celular kkk),por mais que isto não seja um site ou algo incrivel ou algo profissional,principalmente esta carta,é de coração e que você possa ter isto salvo para você,quando estiver triste,magoada ou algo do tipo,não é para que toda a dor vá embora,pois apenas isto não irá ajudar,porém apenas para aliviar ou ajudar um pouco,para saber que você não está sozinha,pode contar com a gente para sempre!</p>
+        <p>Que Deus te abençoe muito,que não te deixe faltar nada,pois é por conta dele que estamos aqui hoje,vivos,e por causa dele temos o privilégio de ter você como mãe,e que você tenha um ótimo dia,estamos com você para sempre!</p>
+        <p>"Honra teu pai e tua mãe, para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá" (Êxodo 20:12).</p>
+        <p>Espero te honrar (você e meu pai)o restante de minha vida,te amar,e que eu seja um filho muito bom para você,e pai,não se preocupa,quando chegar o seu dia irá receber um desses também kkkkkkkkk</p>
       </div>
-      <div class="mensagem-exibida" id="mensagem"></div>
-    </section>
+
+      <button onclick="mostrarTexto()" id="botaoLerMais">Mostrar tudo</button>
+    </div>
+  </section>
+
+
 
   <div class="gallery">
-  <div class="image-item">
-    <img src="fotos mae/1746917816883.jpg" alt="Mamãe 1" loading="lazy">
-    <a href="fotos mae/1746917816883.jpg" download="Mamãe_1" class="download-btn">Baixar Imagem</a>
+    <div class="image-item">
+      <img src="fotos mae/1746917816883.jpg" alt="Mamãe 1" loading="lazy">
+      <a href="fotos mae/1746917816883.jpg" download="Mamãe_1" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/1746917816893.jpg" alt="Mamãe 2" loading="lazy">
+      <a href="fotos mae/1746917816893.jpg" download="Mamãe_2" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/1746917906095.jpg" alt="Mamãe 3" loading="lazy">
+      <a href="fotos mae/1746917906095.jpg" download="Mamãe_3" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM00060.jpg" alt="Mamãe 4" loading="lazy">
+      <a href="fotos mae/CAM00060.jpg" download="Mamãe_4" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM00092.jpg" alt="Mamãe 5" loading="lazy">
+      <a href="fotos mae/CAM00092.jpg" download="Mamãe_5" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM00093.jpg" alt="Mamãe 6" loading="lazy">
+      <a href="fotos mae/CAM00093.jpg" download="Mamãe_6" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM01153.jpg" alt="Mamãe 7" loading="lazy">
+      <a href="fotos mae/CAM01153.jpg" download="Mamãe_7" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM01215.jpg" alt="Mamãe 8" loading="lazy">
+      <a href="fotos mae/CAM01215.jpg" download="Mamãe_8" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM01330.jpg" alt="Mamãe 9" loading="lazy">
+      <a href="fotos mae/CAM01330.jpg" download="Mamãe_9" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM01559.jpg" alt="Mamãe 10" loading="lazy">
+      <a href="fotos mae/CAM01559.jpg" download="Mamãe_10" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM02704.jpg" alt="Mamãe 11" loading="lazy">
+      <a href="fotos mae/CAM02704.jpg" download="Mamãe_11" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM02965.jpg" alt="Mamãe 12" loading="lazy">
+      <a href="fotos mae/CAM02965.jpg" download="Mamãe_12" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM03349.jpg" alt="Mamãe 13" loading="lazy">
+      <a href="fotos mae/CAM03349.jpg" download="Mamãe_13" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/CAM03792.jpg" alt="Mamãe 14" loading="lazy">
+      <a href="fotos mae/CAM03792.jpg" download="Mamãe_14" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/IMG-20150630-WA0054.jpg" alt="Mamãe 15" loading="lazy">
+      <a href="fotos mae/IMG-20150630-WA0054.jpg" download="Mamãe_15" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="fotos mae/IMG_20150510_115320.jpg" alt="Mamãe 16" loading="lazy">
+      <a href="fotos mae/IMG_20150510_115320.jpg" download="Mamãe_16" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20161222_152641.jpg" alt="Mamãe 17" loading="lazy">
+      <a href="foootos/20161222_152641.jpg" download="Mamãe_17" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20161225_040419.jpg" alt="Mamãe 18" loading="lazy">
+      <a href="foootos/20161225_040419.jpg" download="Mamãe_18" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20161225_143207.jpg" alt="Mamãe 19" loading="lazy">
+      <a href="foootos/20161225_143207.jpg" download="Mamãe_19" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20161225_145736.jpg" alt="Mamãe 20" loading="lazy">
+      <a href="foootos/20161225_145736.jpg" download="Mamãe_20" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20161225_145848.jpg" alt="Mamãe 21" loading="lazy">
+      <a href="foootos/20161225_145848.jpg" download="Mamãe_21" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/IMG-20161004-WA0008.jpg" alt="Mamãe 22" loading="lazy">
+      <a href="foootos/IMG-20161004-WA0008.jpg" download="Mamãe_22" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170106_205048.jpg" alt="Mamãe 23" loading="lazy">
+      <a href="foootos/20170106_205048.jpg" download="Mamãe_23" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170225_182628.jpg" alt="Mamãe 24" loading="lazy">
+      <a href="foootos/20170225_182628.jpg" download="Mamãe_24" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170227_175511.jpg" alt="Mamãe 25" loading="lazy">
+      <a href="foootos/20170227_175511.jpg" download="Mamãe_25" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170303_142124.jpg" alt="Mamãe 26" loading="lazy">
+      <a href="foootos/20170303_142124.jpg" download="Mamãe_26" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170303_142906.jpg" alt="Mamãe 27" loading="lazy">
+      <a href="foootos/20170303_142906.jpg" download="Mamãe_27" class="download-btn">Baixar Imagem</a>
+    </div>
+    <div class="image-item">
+      <img src="foootos/20170307_204547.jpg" alt="Mamãe 28" loading="lazy">
+      <a href="foootos/20170307_204547.jpg" download="Mamãe_28" class="download-btn">Baixar Imagem</a>
+    </div>
   </div>
-  <div class="image-item">
-    <img src="fotos mae/1746917816893.jpg" alt="Mamãe 2" loading="lazy">
-    <a href="fotos mae/1746917816893.jpg" download="Mamãe_2" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/1746917906095.jpg" alt="Mamãe 3" loading="lazy">
-    <a href="fotos mae/1746917906095.jpg" download="Mamãe_3" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM00060.jpg" alt="Mamãe 4" loading="lazy">
-    <a href="fotos mae/CAM00060.jpg" download="Mamãe_4" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM00092.jpg" alt="Mamãe 5" loading="lazy">
-    <a href="fotos mae/CAM00092.jpg" download="Mamãe_5" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM00093.jpg" alt="Mamãe 6" loading="lazy">
-    <a href="fotos mae/CAM00093.jpg" download="Mamãe_6" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM01153.jpg" alt="Mamãe 7" loading="lazy">
-    <a href="fotos mae/CAM01153.jpg" download="Mamãe_7" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM01215.jpg" alt="Mamãe 8" loading="lazy">
-    <a href="fotos mae/CAM01215.jpg" download="Mamãe_8" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM01330.jpg" alt="Mamãe 9" loading="lazy">
-    <a href="fotos mae/CAM01330.jpg" download="Mamãe_9" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM01559.jpg" alt="Mamãe 10" loading="lazy">
-    <a href="fotos mae/CAM01559.jpg" download="Mamãe_10" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM02704.jpg" alt="Mamãe 11" loading="lazy">
-    <a href="fotos mae/CAM02704.jpg" download="Mamãe_11" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM02965.jpg" alt="Mamãe 12" loading="lazy">
-    <a href="fotos mae/CAM02965.jpg" download="Mamãe_12" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM03349.jpg" alt="Mamãe 13" loading="lazy">
-    <a href="fotos mae/CAM03349.jpg" download="Mamãe_13" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/CAM03792.jpg" alt="Mamãe 14" loading="lazy">
-    <a href="fotos mae/CAM03792.jpg" download="Mamãe_14" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/IMG-20150630-WA0054.jpg" alt="Mamãe 15" loading="lazy">
-    <a href="fotos mae/IMG-20150630-WA0054.jpg" download="Mamãe_15" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="fotos mae/IMG_20150510_115320.jpg" alt="Mamãe 16" loading="lazy">
-    <a href="fotos mae/IMG_20150510_115320.jpg" download="Mamãe_16" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20161222_152641.jpg" alt="Mamãe 17" loading="lazy">
-    <a href="foootos/20161222_152641.jpg" download="Mamãe_17" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20161225_040419.jpg" alt="Mamãe 18" loading="lazy">
-    <a href="foootos/20161225_040419.jpg" download="Mamãe_18" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20161225_143207.jpg" alt="Mamãe 19" loading="lazy">
-    <a href="foootos/20161225_143207.jpg" download="Mamãe_19" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20161225_145736.jpg" alt="Mamãe 20" loading="lazy">
-    <a href="foootos/20161225_145736.jpg" download="Mamãe_20" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20161225_145848.jpg" alt="Mamãe 21" loading="lazy">
-    <a href="foootos/20161225_145848.jpg" download="Mamãe_21" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/IMG-20161004-WA0008.jpg" alt="Mamãe 22" loading="lazy">
-    <a href="foootos/IMG-20161004-WA0008.jpg" download="Mamãe_22" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170106_205048.jpg" alt="Mamãe 23" loading="lazy">
-    <a href="foootos/20170106_205048.jpg" download="Mamãe_23" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170225_182628.jpg" alt="Mamãe 24" loading="lazy">
-    <a href="foootos/20170225_182628.jpg" download="Mamãe_24" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170227_175511.jpg" alt="Mamãe 25" loading="lazy">
-    <a href="foootos/20170227_175511.jpg" download="Mamãe_25" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170303_142124.jpg" alt="Mamãe 26" loading="lazy">
-    <a href="foootos/20170303_142124.jpg" download="Mamãe_26" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170303_142906.jpg" alt="Mamãe 27" loading="lazy">
-    <a href="foootos/20170303_142906.jpg" download="Mamãe_27" class="download-btn">Baixar Imagem</a>
-  </div>
-  <div class="image-item">
-    <img src="foootos/20170307_204547.jpg" alt="Mamãe 28" loading="lazy">
-    <a href="foootos/20170307_204547.jpg" download="Mamãe_28" class="download-btn">Baixar Imagem</a>
-  </div>
-</div>
 
-  
- 
-
-  
   <div class="coraçoes-container"></div>
 
-  
-  
   <div class="envelope" id="cartinha" onclick="abrirEnvelope()">
     <div class="tampa"></div>
     <div class="corpo">
       <p id="mensagemCartinha">💌 Toque para abrir uma mensagem especial</p>
     </div>
   </div>
-  
+
   <footer>
     Feito com amor 💖 para você!
   </footer>

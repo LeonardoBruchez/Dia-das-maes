@@ -26,14 +26,13 @@ p {
     animation: fadeInUp 2s ease;
 }
   
-/* Layout padrão (desktop) - usando grid */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Disposição flexível de colunas */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
     padding: 20px;
 }
-
+  
 .gallery img {
     width: 100%;
     height: auto;
@@ -42,45 +41,21 @@ p {
     transition: transform 0.3s, z-index 0s;
     object-fit: cover;
 }
-
+  
 .gallery img:hover {
-    transform: scale(1.05);  /* Efeito de zoom */
+    transform: scale(1.05);
     z-index: -1;
 }
-
-/* Layout para a galeria de imagens - para telas menores que 768px */
-@media (max-width: 768px) {
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; /* Espaço entre as imagens */
-    }
-
-    .gallery img {
-        width: 48%; /* 48% para garantir duas imagens por linha */
-        margin-bottom: 20px; /* Espaço entre as imagens na linha */
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Suaviza a transição no hover */
-    }
-
-    .gallery img:hover {
-        transform: scale(1.05); /* Efeito de zoom no hover */
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
-        z-index: 1; /* Garantir que a imagem sobreposta seja exibida corretamente */
-    }
-}
-
-
-/* Animações de fade */
+  
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-50px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
+  
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(50px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 
 /* NOVO BOTÃO SCROLL COM ID */
 /* Ajustar a posição do botão para garantir que ele fique fixo */
@@ -142,6 +117,52 @@ p {
         padding: 10px 14px;
     }
 }
+.exibir-texto {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-top: 20px;
+}
+
+#tituloCaixa {
+    font-size: 24px; /* Tamanho do título */
+    color: #1e90ff; /* Cor do título (azul) */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.message-box {
+  background-color: #f0f8ff;
+  border: 2px solid #ec407a;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 10px #c2185b;
+}
+
+.message-box p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.message-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.message-box button:hover {
+  background-color: #ec407a;
+}
+
 
 .heart {
     position: fixed;
@@ -191,7 +212,8 @@ p {
     background: #fff0f6;
     border-radius: 20px;
     max-width: 700px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0px 10px #c2185b;
+    border: 2px solid#ec407a;
 }
   
 .mensagens h2 {

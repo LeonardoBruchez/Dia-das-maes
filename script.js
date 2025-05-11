@@ -39,6 +39,25 @@ function mostrarMensagem(estado) {
     mensagem.textContent = texto;
 }
 
+// Função para exibir o texto escrito
+function mostrarTexto() {
+    // Obtém o valor da caixa de texto
+    const texto = document.getElementById('textoInput').value;
+    
+    // Verifica se há algum texto digitado
+    if (texto.trim() !== "") {
+        // Exibe o texto na div de exibição
+        const textoExibidoDiv = document.getElementById('textoExibido');
+        textoExibidoDiv.innerHTML = `<strong>Mensagem para a Mamãe:</strong><p>${texto}</p>`;
+
+        // Limpa a caixa de texto após exibir
+        document.getElementById('textoInput').value = "";
+    } else {
+        // Caso a caixa de texto esteja vazia, avisa o usuário
+        alert("Por favor, escreva algo antes de enviar.");
+    }
+}
+
 let cartinhaAberta = false;
 
 function abrirEnvelope() {
@@ -53,6 +72,22 @@ function abrirEnvelope() {
         cartinhaAberta = true;
     }
 }
+
+
+
+  function mostrarTexto() {
+    const texto = document.getElementById('textoCompleto');
+    const botao = document.getElementById('botaoLerMais');
+
+    if (texto.style.display === 'none') {
+      texto.style.display = 'block';
+      botao.textContent = 'Mostrar menos';
+    } else {
+      texto.style.display = 'none';
+      botao.textContent = 'Mostrar tudo';
+    }
+  }
+
 
 // Criar corações flutuantes
 function criarCoracao() {
