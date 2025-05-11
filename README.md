@@ -1,2 +1,2 @@
-<a href="https://leonardobruchez.github.io/Dia-das-maes/index.html" target_blank> ABRIR SITE
+<a href="https://leonardobruchez.github.io/Dia-das-maes/index.html" target="_blank"> ABRIR SITE
 
